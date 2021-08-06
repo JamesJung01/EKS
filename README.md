@@ -29,7 +29,7 @@
   
   $ aws sts get-caller-identity
 
-5. EKS cluster creation
+5. EKS cluster creation \
   $ eksctl create cluster \
     --name edp-k8s \
     --region ap-northeast-2 \
