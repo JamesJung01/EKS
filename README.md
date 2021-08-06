@@ -26,16 +26,15 @@
   AWS Secret Access Key [None]: {Secret_Access_Key} \
   Default region name [None]: ap-northeast-2 \
   Default output format [None]: \
-  
   $ aws sts get-caller-identity
 
 5. EKS cluster creation \
   $ eksctl create cluster \
-    --name edp-k8s \
+    --name {cluster_name} \
     --region ap-northeast-2 \
     --with-oidc \
     --ssh-access \
-    --ssh-public-key edp-key \
+    --ssh-public-key {key_pair_name} \
     --nodes 3 \
     --node-type t2.micro \
     --node-volume-size=20 \
