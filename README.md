@@ -29,4 +29,14 @@
   
   $ aws sts get-caller-identity
 
-  
+5. EKS cluster creation
+  $ eksctl create cluster \
+    --name edp-k8s \
+    --region ap-northeast-2 \
+    --with-oidc \
+    --ssh-access \
+    --ssh-public-key edp-key \
+    --nodes 3 \
+    --node-type t2.micro \
+    --node-volume-size=20 \
+    --managed
