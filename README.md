@@ -20,4 +20,13 @@
   $ echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc \
   $ kubectl version --short --client  
 
-4. 
+4. AWS configure
+  $ aws configure  
+  AWS Access Key ID [None]: {Access_Key_ID}
+  AWS Secret Access Key [None]: {Secret_Access_Key}
+  Default region name [None]: ap-northeast-2
+  Default output format [None]: 
+  
+  $ aws sts get-caller-identity
+
+  
